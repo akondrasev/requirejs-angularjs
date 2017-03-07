@@ -1,0 +1,7 @@
+.slick-header-column.ui-state-default {
+	height: 25px;
+}
+
+.slick-header-columns, .slick-headerrow-columns, .slick-footerrow-columns {
+	border-bottom: 1px solid;
+}

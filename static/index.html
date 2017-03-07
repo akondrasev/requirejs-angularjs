@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link rel="stylesheet" href="slickgrid/css/bootstrap.css" type="text/css"/>
+	<link rel="stylesheet" href="slickgrid/slick.grid.css" type="text/css"/>
+	<link rel="stylesheet" href="css/grid.css" type="text/css"/>
+	<script src="requirejs/require.js"></script>
+</head>
+
+<body>
+	<div ng-controller="AppController">
+		<grid></grid>
+	</div>
+
+	<script>
+		require(["main"], function() {
+			require(["app"], function(app){
+				app.init();
+			});
+		});
+	</script>
+</body>
+
+</html>
