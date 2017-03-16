@@ -8,7 +8,9 @@ require.config({
 		'slick-core': "slickgrid/slick.core",
 		'jquery-ui': 'slickgrid/lib/jquery-ui-1.11.3',
 		'AppController': "controller/AppController",
-		'grid' : "directives/grid"
+		'grid' : "directives/grid",
+		'Core': "core/core",
+		'text': "text/text"
 	},
 
 	shim: {

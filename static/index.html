@@ -10,13 +10,12 @@
 </head>
 
 <body>
-	<div ng-controller="AppController">
-		<grid></grid>
-	</div>
+
+	<div id="view"></div>
 
 	<script>
 		require(["main"], function() {
-			require(["app"], function(app){
+			require(["app", "text"], function(app){
 				app.init();
 			});
 		});
