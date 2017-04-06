@@ -12,11 +12,8 @@ define(["require", 'jquery'],function (require, $) {
         showModule: function (id) {
             var self = this;
             var module = modules[id];
-            require([module.js, "text!" + module.css, "text!" + module.html], function (js, css, html) {
+            require(["modules/" + id + "/index"], function (loadedModule) {
                 $view.empty();
-                $view.append(html);
-                addStyleString(css);
-                self.app.controller(module.id, js.controller);
                 //TODO angular compile/injectors or whatever we need to do with html
             });
         },

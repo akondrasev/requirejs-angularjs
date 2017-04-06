@@ -9,9 +9,6 @@ define(["jquery", "angular", "Core"], function ($, angular, Core) {
         init: function () {
             angular.bootstrap(document, ['app']);
             core.registerModule({
-                js: "modules/main/main.js",
-                css: "modules/main/main.css",
-                html: "modules/main/main.html",
                 name: "Main",
                 id: "main"
             });
